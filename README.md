@@ -7,7 +7,7 @@ To disambiguate the pronunciation of homographs, we propose a system that relies
 
 ## Dataset
 
-The file `homograph_disambiguation_dataset.csv` labels the phonetic pronunciation for 35 homographs given their POS tag in a sentence.  A total of **4,091 examples** were manually annotated by a French native speaker. Sentences were extracted from French data used to train [FlauBERT](https://github.com/getalp/Flaubert#31-data), a state-of-the-art BERT for French.
+The file `homograph_disambiguation_dataset.csv` labels the pronunciation for 35 homographs given their POS tag in a sentence.  A total of **4,091 examples** were manually annotated by a French native speaker. Sentences were extracted from French data used to train [FlauBERT](https://github.com/getalp/Flaubert#31-data), a state-of-the-art BERT for French.
 
 | column name | type | description | example |
 |:------------|:-----|:------------|:--------|
@@ -16,7 +16,7 @@ The file `homograph_disambiguation_dataset.csv` labels the phonetic pronunciatio
 | homograph_index | int | The index position of the token corresponding to the target homograph. Tokens can either be words, punctuations or symbols. Indexing starts at 0. | 6 |
 | pos | string | The POS tag of the target homograph in the sentence. For additional information regarding POS tags, please refer to the nomenclature provided in the [POS Tagger Documentation](https://huggingface.co/qanastek/pos-french-camembert-flair#new-additional-pos-tags) | NFP |
 | sentence | string | The sentence containing the homograph to disambiguate. Each word/punctuation/symbol is separated by a space, making it easier to tokenize the sentence. | Je disais que 80 % des adoptions par les familles françaises sont faites à l ' étranger . |
-| homograph_pronunciation | string | The phonetic pronunciation of the target homograph in the sentence. Phonemes are separated by spaces. We use IPA symbols, as in this [open-source phonemizer](https://github.com/bootphon/phonemizer) | a d ɔ p s j ɔ̃ |
+| homograph_pronunciation | string | The pronunciation of the target homograph in the sentence. Phonemes are separated by spaces. We use IPA symbols, as in this [open-source phonemizer](https://github.com/bootphon/phonemizer) | a d ɔ p s j ɔ̃ |
 
 Below are the statistics for the number of pronunciations per homograph :
 
@@ -61,7 +61,7 @@ Below are the statistics for the number of pronunciations per homograph :
 
 ## Contributing
 
-Any contribution to this repository is more than welcome.
+Any contribution to this repository is more than welcome.  
 If you have any feedback, please send it to julian.zaidi@ubisoft.com.
 
 © [2023] Ubisoft Entertainment. All Rights Reserved
