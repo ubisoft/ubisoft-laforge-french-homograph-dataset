@@ -59,6 +59,9 @@ Below are the statistics for the number of pronunciations per homograph :
 | vis         | v i s<br>v i           |     128<br>37 |
 
 
-## License
+## Contributing
+
+Any contribution to this repository is more than welcome.
+If you have any feedback, please send it to julian.zaidi@ubisoft.com.
 
 © [2023] Ubisoft Entertainment. All Rights Reserved
